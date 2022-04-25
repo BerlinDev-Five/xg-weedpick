@@ -1,12 +1,12 @@
 # xg-weedpick
 
-Latest QBCoreVersion Supported!
+*Latest QBCoreVersion Supported!
 
-qb-targed required!
+*qb-targed required!
 
 
 
-!IMPORTANT
+# **!IMPORTANT**
 
 Make sure to add these in qb-core/client/functions.lua
 
@@ -71,7 +71,7 @@ QBCore.Functions.DeleteObject = function(object)
 end
 ```
 
-!IMPORTANT
+**!IMPORTANT**
 
 Paste this code in qb-target/init.lua 
 
@@ -151,6 +151,6 @@ Config.Peds
 
 Enjoy
 
-Any issue related this script contact me on my discord server
-Join our Framework
+**Any issue related this script contact me on my discord server
+Join our Framework**
 Discord: https://discord.gg/Nh8WscE6ck
