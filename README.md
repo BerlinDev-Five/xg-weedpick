@@ -1,14 +1,14 @@
 # xg-weedpick
 
-*Latest QBCoreVersion Supported!
+* Latest QBCoreVersion Supported!
 
-*qb-targed required!
+* qb-targed required!
 
 
 
 # **!IMPORTANT**
 
-Make sure to add these in qb-core/client/functions.lua
+* Make sure to add these in qb-core/client/functions.lua
 
 
 (And this after Drawtext3d) 
@@ -73,9 +73,9 @@ end
 
 **!IMPORTANT**
 
-Paste this code in qb-target/init.lua 
+* Paste this code in qb-target/init.lua 
 
-Config.BoxZones 
+* Config.BoxZones 
 
 ```lua
    ["weedpro"] = {
@@ -99,9 +99,9 @@ Config.BoxZones
 },
 ```
 
-Paste this code in qb-target/init.lua 
+* Paste this code in qb-target/init.lua 
 
-Config.TargetModels
+* Config.TargetModels
 
 ```lua
     ['weedpick'] = {
@@ -134,9 +134,9 @@ Config.TargetModels
     },
 ```	
 
-Paste this code in qb-target/init.lua 
+* Paste this code in qb-target/init.lua 
 
-Config.Peds
+* Config.Peds
 
 ```lua
     { 
