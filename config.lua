@@ -19,7 +19,7 @@ Config.LicenseEnable = false -- enable processing licenses? The player will be r
 Config.GiveBlack = false -- give black money? if disabled it'll give regular cash.
 
 Config.CircleZones = {
-	WeedField = {coords = vector3(278.5, 4383.7, 47.06), name = 'blip_weedfield', color = 25, sprite = 496, radius = 100.0},
+	WeedField = {coords = vector3(310.91, 4290.87, 45.15), name = 'blip_weedfield', color = 25, sprite = 496, radius = 100.0},
 	WeedProcessing = {coords = vector3(2328.66, 2572.17, 46.90), name = 'blip_weedprocessing', color = 25, sprite = 496, radius = 100.0},
 	DrugDealer = {coords = vector3(-1164.92, -1566.67, 3.45), name = 'blip_drugdealer', color = 6, sprite = 378, radius = 25.0},
 }
