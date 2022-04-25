@@ -13,7 +13,7 @@ RegisterNetEvent("QBCore:Client:OnPlayerLoaded", function()
 	CheckCoords()
 	Wait(1000)
 	local coords = GetEntityCoords(PlayerPedId())
-	if GetDistanceBetweenCoords(coords, Config.CircleZones.WeedField.coords, true) < 1000 then
+	if GetDistanceBetweenCoords(coords, Config.CircleZones.WeedField.coords, true) < 50 then
 		SpawnWeedPlants()
 	end
 end)
@@ -22,7 +22,7 @@ function CheckCoords()
 	CreateThread(function()
 		while true do
 			local coords = GetEntityCoords(PlayerPedId())
-			if GetDistanceBetweenCoords(coords, Config.CircleZones.WeedField.coords, true) < 1000 then
+			if GetDistanceBetweenCoords(coords, Config.CircleZones.WeedField.coords, true) < 50 then
 				SpawnWeedPlants()
 			end
 			Wait(1 * 60000)
@@ -139,12 +139,12 @@ function GenerateWeedCoords()
 		local weedCoordX, weedCoordY
 
 		math.randomseed(GetGameTimer())
-		local modX = math.random(-10, 10)
+		local modX = math.random(-90, 90)
 
 		Wait(100)
 
 		math.randomseed(GetGameTimer())
-		local modY = math.random(-10, 10)
+		local modY = math.random(-90, 90)
 
 		weedCoordX = Config.CircleZones.WeedField.coords.x + modX
 		weedCoordY = Config.CircleZones.WeedField.coords.y + modY
@@ -159,7 +159,7 @@ function GenerateWeedCoords()
 end
 
 function GetCoordZWeed(x, y)
-	local groundCheckHeights = { 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 50.0 }
+	local groundCheckHeights = { 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0 }
 
 	for i, height in ipairs(groundCheckHeights) do
 		local foundGround, z = GetGroundZFor_3dCoord(x, y, height)
@@ -169,7 +169,7 @@ function GetCoordZWeed(x, y)
 		end
 	end
 
-	return 31.85
+	return 43.0
 end
 
 RegisterNetEvent("weed:process", function()
